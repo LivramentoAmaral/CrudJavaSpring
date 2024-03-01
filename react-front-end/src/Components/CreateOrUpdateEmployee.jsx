@@ -48,20 +48,20 @@ const CreateOrUpdateEmployee = () => {
     
     return(
         <>
-        <div className="container" style={{marginTop:"4rem",display:'flex', height:'100%'}}>
+        <div className="container" style={{display:'flex', height:'100%', width:'100%', justifyContent:"center"}}>
             <div className="row">
-                <div className="card col-md-6 offset-md-3 offset-md-3">
-                    <h3 className="text-center">{id<0?"Add":"Update"} Usuário</h3>
-                    <div className="card-body">
-                        <form className="form">
-                            <div className="form-group">
+                <div className="card col-md-6 offset-md-3 offset-md-3" style={{display:'flex', height:'100%', width:'100%', justifyContent:"center"}}>
+                    <h3 className="text-center">{id<0?"Adicionar":"Editar"} Usuário</h3>
+                    <div className="card-body" style={{width:"100%"}}>
+                        <form className="form" style={{width:"100%"}}>
+                            <div className="form-group" >
                                 <label>Nome</label>
                                 <input type="text" placeholder="Nome" name="firstName" className="form -control" 
                                 value={firstName} onChange={changeFirstNameHandler}/>
                             </div>
                             <div className="form-group">
                                 <label>Segundo Nome</label>
-                                <input type="text" placeholder="Last Name" name="lastName" className="form -control" 
+                                <input type="text" placeholder="Segundo Nome" name="lastName" className="form -control" 
                                 value={lastName} onChange={changeLastNameHandler}/>
                             </div>
                             <div className="form-group">
