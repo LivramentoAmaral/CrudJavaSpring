@@ -70,7 +70,7 @@ const ListEmployee = () => {
                                         Editar
                                     </button>
                                     <button className="btn btn-danger" onClick={() => deleteEmployee(employee.id)}>
-                                        Detletar
+                                        Deletar
                                     </button>
                                     <button className="btn btn-secondary" onClick={() => viewEmployee(employee.id)}>
                                         Visualizar

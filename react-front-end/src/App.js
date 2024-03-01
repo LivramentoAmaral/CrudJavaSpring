@@ -9,17 +9,20 @@ import ViewEmployee from './Components/ViewEmployee';
 function App() {
   return (
     <>
-    <Router>
-    <div className="container">
-      <HeaderComponent/>
-      <Routes>
-          <Route exact path="/" element={<ListEmployee/>} />
-          <Route exact path="/add-employee/:id" element={<CreateOrUpdateEmployee/>} />
-          <Route exact path="/view-employee/:id" element={<ViewEmployee/>} />
-        </Routes>
-      <FooterComponent/>
-    </div>
-    </Router>
+      <Router>
+        <div className="container">
+          <HeaderComponent />
+          <div className="Box" style={{ marginTop: "4rem", display: 'flex', height: '100%' }}>
+            <Routes>
+              <Route exact path="/" element={<ListEmployee />} />
+              <Route exact path="/add-employee/:id" element={<CreateOrUpdateEmployee />} />
+              <Route exact path="/view-employee/:id" element={<ViewEmployee />} />
+            </Routes>
+          </div>
+
+        </div>
+        <FooterComponent />
+      </Router>
     </>
   );
 }

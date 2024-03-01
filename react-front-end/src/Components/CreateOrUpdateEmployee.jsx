@@ -48,7 +48,7 @@ const CreateOrUpdateEmployee = () => {
     
     return(
         <>
-        <div className="container" style={{marginTop:"4rem"}}>
+        <div className="container" style={{marginTop:"4rem",display:'flex', height:'100%'}}>
             <div className="row">
                 <div className="card col-md-6 offset-md-3 offset-md-3">
                     <h3 className="text-center">{id<0?"Add":"Update"} Usuário</h3>

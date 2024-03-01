@@ -14,8 +14,8 @@ const ViewEmployee = () => {
     },[]);
     return(
     <>
-      <div class="card" style={{"width": "18rem","marginTop":"4rem","marginLeft":"auto","marginRight":"auto"}}>
-        <img class="card-img-top" style={{"border":"2px solid"}} src="https://www.svgrepo.com/show/33058/employee.svg" alt="Card image cap"/>
+      <div class="card" style={{"width": "28%","height":"100%"  }}>
+        <img class="card-img-top" style={{"border":"2px solid"}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTuzV2RgxmTJz27y0UCftD47PnWBKjP12sPA&usqp=CAU" alt="Card image cap"/>
         <div class="card-body">
         <h5 class="card-title">Detalhes do funcionário {employee.firstName} {employee.lastName}</h5>
         <ul class="list-group list-group-flush">        <li class="list-group-item">Email: {employee.email}</li>
